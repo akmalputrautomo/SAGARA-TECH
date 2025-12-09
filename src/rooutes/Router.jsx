@@ -15,7 +15,7 @@ export const Router = () => {
 
         {/* dashboard */}
         <Route
-          path="/dashboard"
+          path="/"
           element={
             <ProtectedRoute>
               <Dashboard />

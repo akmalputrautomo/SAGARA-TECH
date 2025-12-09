@@ -13,7 +13,7 @@ export const Login = () => {
     // Simulasi login sederhana dengan token
     if (email === "admin@example.com" && password === "admin123") {
       CookieStorage.set(CookieKeys.AuthToken, true);
-      window.location.href = "/dashboard";
+      window.location.href = "/";
     } else {
       setError("Email atau password salah");
     }
