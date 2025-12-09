@@ -27,12 +27,12 @@ export const Login = () => {
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label className="block mb-1 font-medium">Email</label>
-            <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Masukkan email" className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring" required />
+            <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="admin@example.com" className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring" required />
           </div>
 
           <div>
             <label className="block mb-1 font-medium">Password</label>
-            <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Masukkan password" className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring" required />
+            <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="admin123" className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring" required />
           </div>
 
           {error && <p className="text-red-500 text-sm text-center">{error}</p>}
